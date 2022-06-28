@@ -454,13 +454,24 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .section-header {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-header {
+    margin-bottom: 50px;
+  }
 }
 
-.team__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .team__item {
@@ -468,14 +479,37 @@ textarea {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc(25% - 30px);
+    margin-bottom: 0px;
+  }
 }
 
 .cards {
   padding-top: 30px;
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .cards {
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    padding-bottom: 30px;
+  }
 }
 
 .card__title {
@@ -779,13 +813,13 @@ textarea {
 @media screen and (min-width: 480px) {
   .qualities {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .qualities {
     padding-top: 64px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -881,7 +915,7 @@ textarea {
   padding-top: 47px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .what-we-do {
     display: none;
   }
@@ -918,38 +952,106 @@ textarea {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 480px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients__list {
   display: flex;
-  justify-content: center;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .clients__list {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .clients__list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
 }
 
 .clients__item .clients__link {
-  width: 170px;
-  height: 92px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .clients__item .clients__link {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item .clients__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__item {
-  margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   align-items: baseline;
   text-align: center;
   align-content: center;
 }
-.clients__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+    width: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    margin-right: 30px;
+  }
 }
 .clients__item:hover, .clients__item:focus {
   border: 1px solid #2196f3;

@@ -1,9 +1,9 @@
 .what-we-do {
-  @media screen (max-width: 1199px) {
-    display: none;
-  }
   padding-top: 47px;
   padding-bottom: $typical-padding-bottom;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .wwd-thumb {
@@ -33,8 +33,7 @@
   margin-right: 30px;
 }
 
-.list {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-}
+// list
+// display: flex;
+// justify-content: center;
+// align-items: center;
