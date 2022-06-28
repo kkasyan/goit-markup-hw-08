@@ -1,0 +1,24 @@
+.logo {
+  text-decoration: none;
+  display: flex;
+  margin-right: 93px;
+  font-family: "Raleway";
+  @include font(700, 26px, 1.19, 0.03em);
+  color: $accent-color;
+}
+
+.logo__part--light {
+  color: $second-text-color;
+}
+
+.logo__part--dark {
+  color: $logo-color;
+}
+
+.logo__part {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $second-text-color;
+}

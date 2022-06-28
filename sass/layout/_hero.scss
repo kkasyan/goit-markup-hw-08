@@ -1,0 +1,72 @@
+.hero {
+  background-color: $hero-bcg-color;
+  color: $second-text-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    background-image: url(/images/phone/Header-img-1x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/images/tablet/Header-img-1x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(/images/desktop/header-1x.jpg);
+  }
+}
+
+.hero__container {
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__header {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-text-color;
+  @media screen and (min-width: 480px) {
+    @include font(null, 26px, 1.61, null);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(null, 26px, 1.61, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 1.36, 0.06em);
+  }
+}
+
+.btn {
+  @extend %btn;
+}
+
+.hero__btn {
+  padding-right: 32px;
+  padding-left: 32px;
+}

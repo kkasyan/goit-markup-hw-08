@@ -1,0 +1,44 @@
+.footer {
+  background-color: $hero-bcg-color;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__column {
+  display: block;
+  margin-right: 70px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.address {
+  @include font(null, 14px, 1.71, null);
+  margin-top: 20px;
+  font-style: normal;
+  color: $second-text-color;
+}
+
+.address__contacts {
+  @include font(null, 14px, 1.71, null);
+  @include transition();
+  margin-top: 9px;
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.join-column--right {
+  margin-right: 93px;
+}

@@ -1,0 +1,72 @@
+.team__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__item {
+  align-items: center;
+  background-color: $second-text-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.cards {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  @include font(500, 16px, 1.19, null);
+  text-align: center;
+}
+
+.card__subtitle {
+  @include font($fw: null, $fs: 16px, $lh: 1.18, $ls: null);
+  text-align: center;
+  color: $paragraph-text-color;
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition($tp: background-color);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $second-text-color;
+  }
+  &--light-bcg {
+    background-color: $second-text-color;
+    fill: $icon-color;
+  }
+  &--dark-bcg {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $second-text-color;
+  }
+}

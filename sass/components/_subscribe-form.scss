@@ -1,0 +1,48 @@
+.join__head {
+  margin-bottom: 20px;
+}
+
+.join__head strong {
+  @include font(700, 14px, 1.14, 0.03em);
+  color: $second-text-color;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.subscribe-thumb {
+  display: flex;
+  align-items: center;
+}
+
+.join__field {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  @include font(null, 16px, 1.25, 0.03em);
+  &:hover,
+  &:focus {
+    outline: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.join__btn {
+  @extend %btn;
+  border-color: transparent;
+  font-style: normal;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.join__icon {
+  margin-left: 10px;
+}

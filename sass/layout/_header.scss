@@ -1,0 +1,103 @@
+.header {
+  text-decoration: none;
+  background-color: $second-text-color;
+  padding-top: 24px;
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header__thumb {
+  display: flex;
+  align-items: baseline;
+}
+
+.header__list {
+  display: flex;
+  align-items: baseline;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.list__item {
+  @include font(500, 14px, 1.14, 0.02em);
+}
+
+.list__item:not(:last-child),
+.list__contact:not(:last-child) {
+  margin-right: 50px;
+}
+
+.list__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 28px;
+  @include transition;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.current .list__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: $accent-color;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+}
+
+.contacts:hover,
+.contacts:focus {
+  fill: $accent-color;
+}
+
+.contacts__list {
+  display: flex;
+  align-items: center;
+}
+
+.list__point {
+  align-items: center;
+  margin-right: 30px;
+}
+
+.list__point:last-child {
+  margin-right: 0;
+}
+
+.list__contact {
+  color: $paragraph-text-color;
+  text-decoration: none;
+  margin-right: 30px;
+  display: flex;
+  @include font(500, 14px, 1.14, 0.02em);
+  @include transition();
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.list__contact:last-child {
+  margin-right: 0;
+}
+
+.list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.current {
+  color: $accent-color;
+}

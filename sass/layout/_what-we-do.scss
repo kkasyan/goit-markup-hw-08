@@ -1,0 +1,40 @@
+.what-we-do {
+  @media screen (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 47px;
+  padding-bottom: $typical-padding-bottom;
+}
+
+.wwd-thumb {
+  position: relative;
+}
+
+.wwd-thumb__header {
+  bottom: 0;
+  position: absolute;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-text-color;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+}
+
+.what-we-do__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__image:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}

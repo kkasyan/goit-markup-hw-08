@@ -1,0 +1,45 @@
+.portfolio__header {
+  border-bottom: 1px solid #ececec;
+}
+
+.portfolio__header .container {
+  background-color: $second-text-color;
+}
+
+.card-set {
+  padding-top: $typical-padding-top;
+  padding-bottom: $typical-padding-bottom;
+}
+
+.card-set__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.card-set__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card-set__btn {
+  @include font(500, 16px, 1.62, 0.03em);
+  @include transition($tp: color background-color filter);
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: $btn-background-color;
+  border: 0ch;
+  color: $main-text-color;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $second-text-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}

@@ -1,0 +1,21 @@
+%btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @include font(700, 16px, 1.88, 0.06em);
+  border: 0ch;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  @include transition($tp: color background-color);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #188ce8;
+  }
+}

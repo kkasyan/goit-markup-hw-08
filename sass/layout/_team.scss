@@ -1,0 +1,11 @@
+.team {
+  @media screen and (min-width: 480px) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+  padding-bottom: $typical-padding-bottom;
+  background-color: $btn-background-color;
+  letter-spacing: 0.03em;
+}
