@@ -1,8 +1,20 @@
 .join__head {
-  margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .join__head strong {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
+  }
   @include font(700, 14px, 1.14, 0.03em);
   color: $second-text-color;
   margin: 0;
@@ -11,8 +23,10 @@
 }
 
 .subscribe-thumb {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .join__field {
@@ -24,12 +38,20 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 358px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   @include font(null, 16px, 1.25, 0.03em);
   &:hover,
   &:focus {
     outline: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -40,7 +62,9 @@
   width: 200px;
   display: flex;
   justify-content: center;
-  margin-left: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .join__icon {

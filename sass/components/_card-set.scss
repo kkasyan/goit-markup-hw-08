@@ -2,15 +2,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+  }
 }
 
 .grid__item {
   display: flex;
   flex-direction: column;
   background-color: var(--second-text-color);
-  flex-basis: calc(100% / 3 - 30px);
-  margin-bottom: 30px;
-  margin-left: 30px;
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
   @include transition($tp: filter);
   &:hover,
   &:focus {
@@ -61,10 +76,20 @@
 }
 
 .grid__card {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  @media screen and (min-width: 480px) {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 20px;
+  }
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;

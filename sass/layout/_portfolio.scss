@@ -7,15 +7,40 @@
 }
 
 .card-set {
-  padding-top: $typical-padding-top;
-  padding-bottom: $typical-padding-bottom;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: $typical-padding-top;
+    padding-bottom: $typical-padding-bottom;
+  }
 }
 
 .card-set__menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.card-set__item {
+  margin-bottom: 15px;
+  &:nth-child(n + 4) {
+    margin-bottom: 0px;
+  }
 }
 
 .card-set__item:not(:last-child) {
