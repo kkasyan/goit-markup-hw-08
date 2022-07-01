@@ -125,32 +125,65 @@
           <ul class="what-we-do__list list">
             <li class="list__image">
               <div class="wwd-thumb">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Человек набирает код на клавиатуре"
-                  width="370"
-                />
-                <h3 class="wwd-thumb__header">Десктопные приложения</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/compressed-webP/wwd1-1x.webp 1x,
+                      ./images/desktop/compressed-webP/wwd1-2x.webp 2x,
+                      ./images/desktop/compressed-jpeg/wwd1-1x.jpg  1x,
+                      ./images/desktop/compressed-jpeg/wwd1-2x.jpg  2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/compressed-jpeg/wwd1-1x.jpg"
+                    alt="Человек набирает код на клавиатуре"
+                    width="370"
+                  />
+                  <h3 class="wwd-thumb__header">Десктопные приложения</h3>
+                </picture>
               </div>
             </li>
             <li class="list__image">
               <div class="wwd-thumb">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Человек держит в руках планшет и выбирает на ноутбуке дизайн приложения"
-                  width="370"
-                />
-                <h3 class="wwd-thumb__header">Мобильные приложения</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/compressed-webP/wwd2-1x.webp 1x,
+                      ./images/desktop/compressed-webP/wwd2-2x.webp 2x,
+                      ./images/desktop/compressed-jpeg/wwd2-1x.jpg  1x,
+                      ./images/desktop/compressed-jpeg/wwd2-2x.jpg  2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/compressed-jpeg/wwd2-1x.jpg"
+                    alt="Человек держит в руках планшет и выбирает на ноутбуке дизайн приложения"
+                    width="370"
+                  />
+                  <h3 class="wwd-thumb__header">Мобильные приложения</h3>
+                </picture>
               </div>
             </li>
             <li class="list__image">
               <div class="wwd-thumb">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Человек держит в руках планшет и рассматривает цветовую палитру"
-                  width="370"
-                />
-                <h3 class="wwd-thumb__header">Дизайнерские решения</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/compressed-webP/wwd3-1x.webp 1x,
+                      ./images/desktop/compressed-webP/wwd3-2x.webp 2x,
+                      ./images/desktop/compressed-jpeg/wwd3-1x.jpg  1x,
+                      ./images/desktop/compressed-jpeg/wwd3-2x.jpg  2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/compressed-jpeg/wwd3-1x.jpg"
+                    alt="Человек держит в руках планшет и рассматривает цветовую палитру"
+                    width="370"
+                  />
+                  <h3 class="wwd-thumb__header">Дизайнерские решения</h3>
+                </picture>
               </div>
             </li>
           </ul>
@@ -162,7 +195,40 @@
           <h2 class="team__header section-header">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img1.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/compressed-webP/team1-1x.webp 1x,
+                    ./images/desktop/compressed-webP/team1-2x.webp 2x,
+                    ./images/desktop/compressed-jpeg/team1-1x.jpg  1x,
+                    ./images/desktop/compressed-jpeg/team1-2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/compressed-webP/team1-1x.webp 1x,
+                    ./images/tablet/compressed-webP/team1-2x.webp 2x,
+                    ./images/tablet/compressed-jpeg/team1-1x.jpg  1x,
+                    ./images/tablet/compressed-jpeg/team1-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/phone/compressed-webP/team1-1x.webp 1x,
+                    ./images/phone/compressed-webP/team1-2x.webp 2x,
+                    ./images/phone/compressed-jpeg/team1-1x.jpg  1x,
+                    ./images/phone/compressed-jpeg/team1-2x.jpg  2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/phone/compressed-jpeg/team1-1x.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                />
+              </picture>
               <div class="cards">
                 <h3 class="card__title">Игорь Демьяненко</h3>
                 <p lang="en" class="card__subtitle">Product Designer</p>
@@ -199,7 +265,40 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/compressed-webP/team2-1x.webp 1x,
+                    ./images/desktop/compressed-webP/team2-2x.webp 2x,
+                    ./images/desktop/compressed-jpeg/team2-1x.jpg  1x,
+                    ./images/desktop/compressed-jpeg/team2-2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/compressed-webP/team2-1x.webp 1x,
+                    ./images/tablet/compressed-webP/team2-2x.webp 2x,
+                    ./images/tablet/compressed-jpeg/team2-1x.jpg  1x,
+                    ./images/tablet/compressed-jpeg/team2-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/phone/compressed-webP/team2-1x.webp 1x,
+                    ./images/phone/compressed-webP/team2-2x.webp 2x,
+                    ./images/phone/compressed-jpeg/team2-1x.jpg  1x,
+                    ./images/phone/compressed-jpeg/team2-2x.jpg  2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/phone/compressed-jpeg/team2-1x.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
               <div class="cards">
                 <h3 class="card__title">Ольга Репина</h3>
                 <p lang="en" class="card__subtitle">Frontend Developer</p>
@@ -236,7 +335,40 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img3.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/compressed-webP/team3-1x.webp 1x,
+                    ./images/desktop/compressed-webP/team3-2x.webp 2x,
+                    ./images/desktop/compressed-jpeg/team3-1x.jpg  1x,
+                    ./images/desktop/compressed-jpeg/team3-2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/compressed-webP/team3-1x.webp 1x,
+                    ./images/tablet/compressed-webP/team3-2x.webp 2x,
+                    ./images/tablet/compressed-jpeg/team3-1x.jpg  1x,
+                    ./images/tablet/compressed-jpeg/team3-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/phone/compressed-webP/team3-1x.webp 1x,
+                    ./images/phone/compressed-webP/team3-2x.webp 2x,
+                    ./images/phone/compressed-jpeg/team3-1x.jpg  1x,
+                    ./images/phone/compressed-jpeg/team3-2x.jpg  2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/phone/compressed-jpeg/team3-1x.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="cards">
                 <h3 class="card__title">Николай Тарасов</h3>
                 <p lang="en" class="card__subtitle">Marketing</p>
@@ -273,7 +405,40 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img4.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/compressed-webP/team4-1x.webp 1x,
+                    ./images/desktop/compressed-webP/team4-2x.webp 2x,
+                    ./images/desktop/compressed-jpeg/team4-1x.jpg  1x,
+                    ./images/desktop/compressed-jpeg/team4-2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/compressed-webP/team4-1x.webp 1x,
+                    ./images/tablet/compressed-webP/team4-2x.webp 2x,
+                    ./images/tablet/compressed-jpeg/team4-1x.jpg  1x,
+                    ./images/tablet/compressed-jpeg/team4-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/phone/compressed-webP/team4-1x.webp 1x,
+                    ./images/phone/compressed-webP/team4-2x.webp 2x,
+                    ./images/phone/compressed-jpeg/team4-1x.jpg  1x,
+                    ./images/phone/compressed-jpeg/team4-2x.jpg  2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/phone/compressed-jpeg/team4-1x.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                />
+              </picture>
               <div class="cards">
                 <h3 class="card__title">Михаил Ермаков</h3>
                 <p lang="en" class="card__subtitle">UI Designer</p>
