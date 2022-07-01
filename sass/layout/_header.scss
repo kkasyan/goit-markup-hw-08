@@ -17,10 +17,19 @@
 .header__flex {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  // align-items: baseline;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     align-items: center;
   }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .header__thumb {
@@ -86,11 +95,7 @@
 }
 
 .contacts__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: baseline;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -101,9 +106,9 @@
 .list__point {
   align-items: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0px;
+    padding-top: 10px;
+    &:first-child {
+      padding-top: 0px;
     }
   }
   @media screen and (min-width: 1200px) {

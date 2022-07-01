@@ -19,33 +19,37 @@
       referrerpolicy="no-referrer"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__flex">
-          <div class="header__thumb">
-            <a class="header__logo logo" href="index.html" lang="en">
-              <span class="logo__accent">Web</span>
-              <span class="logo__part--dark">Studio</span>
-            </a>
-            <nav class="header__nav">
-              <ul class="header__list list">
-                <li class="list__item current">
-                  <a class="list__link" href="./index.html">Студия</a>
-                </li>
-                <li class="list__item">
-                  <a class="list__link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="list__item">
-                  <a class="list__link" href="">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="test">
+            <div class="header__thumb">
+              <a class="header__logo logo" href="index.html" lang="en">
+                <span class="logo__accent">Web</span>
+                <span class="logo__part--dark">Studio</span>
+              </a>
+            </div>
+            <div class="headr__thumb">
+              <nav class="header__nav">
+                <ul class="header__list list">
+                  <li class="list__item current">
+                    <a class="list__link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="list__item">
+                    <a class="list__link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="list__item">
+                    <a class="list__link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
           <div class="contacts">
             <ul class="contacts__list list">
@@ -67,11 +71,18 @@
               </li>
             </ul>
           </div>
-           <button type="button" class="menu__open-button js-open-menu" aria-expanded="false" aria-controls="js-menu-container">
-              <svg class="menu__icon" width="40" height="40">
-                <use href="./images/symbol-defs.svg#icon-menu-open"></use>
-              </svg>
-           </button>
+          <button
+            type="button"
+            class="menu__open-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="js-menu-container"
+          >
+            <svg class="menu__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <!--Герой-->
@@ -227,7 +238,6 @@
                 <img
                   src="./images/phone/compressed-jpeg/team1-1x.jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
                 />
               </picture>
               <div class="cards">
@@ -297,7 +307,6 @@
                 <img
                   src="./images/phone/compressed-jpeg/team2-1x.jpg"
                   alt="Ольга Репина"
-                  width="270"
                 />
               </picture>
               <div class="cards">
@@ -367,7 +376,6 @@
                 <img
                   src="./images/phone/compressed-jpeg/team3-1x.jpg"
                   alt="Николай Тарасов"
-                  width="270"
                 />
               </picture>
               <div class="cards">
@@ -437,7 +445,6 @@
                 <img
                   src="./images/phone/compressed-jpeg/team4-1x.jpg"
                   alt="Михаил Ермаков"
-                  width="270"
                 />
               </picture>
               <div class="cards">
@@ -684,35 +691,50 @@
       </div>
     </div>
     <div class="mobile-menu is-hidden js-menu-container" id="js-menu-container">
-<div class="container">
-  <div class="mobile-menu__top">
-    <button type="button" class="mobile-menu__close-button js-close-menu">
-      <svg class="mobile-menu__close-icon" width="40" height="40">
-                <use href="./images/symbol-defs.svg#icon-close-menu"></use>
-              </svg>
-    </button>
-    <ul class="mobile-menu__list">
-      <li class="mobile-menu__item current"><a class="mobile-menu__link" href="./index.html">Студия</a> </li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
-    </ul>
-  </div>
-   <div class="mobile-menu__bottom bottom">
-    <ul class="bottom__contacts">
-      <li class="bottom__contact phone"><a class="bottom__link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
-      <li class="bottom__contact"><a class="bottom__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    </ul>
-    <ul class="bottom__socials soc">
-      <li class="soc__item"><a class="soc__link" href="">Instagram</a></li>
-      <li class="soc__item"><a class="soc__link" href="">Twitter</a></li>
-      <li class="soc__item"><a class="soc__link" href="">Facebook</a></li>
-      <li class="soc__item"><a class="soc__link" href="">LinkedIn</a></li>
-    </ul>
-   </div>
-</div>
-             
-              </div>
-              
+      <div class="container">
+        <div class="mobile-menu__top">
+          <button type="button" class="mobile-menu__close-button js-close-menu">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item current">
+              <a class="mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__bottom bottom">
+          <ul class="bottom__contacts">
+            <li class="bottom__contact phone">
+              <a class="bottom__link" href="tel:+38 096 111 11 11">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="bottom__contact">
+              <a class="bottom__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="bottom__socials soc">
+            <li class="soc__item">
+              <a class="soc__link" href="">Instagram</a>
+            </li>
+            <li class="soc__item"><a class="soc__link" href="">Twitter</a></li>
+            <li class="soc__item"><a class="soc__link" href="">Facebook</a></li>
+            <li class="soc__item"><a class="soc__link" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

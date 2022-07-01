@@ -467,6 +467,11 @@ textarea {
     letter-spacing: 0.03em;
   }
 }
+@media screen and (min-width: 780px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-weight: 700;
@@ -606,6 +611,16 @@ textarea {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .join__head {
     margin-bottom: 20px;
@@ -631,7 +646,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .subscribe-thumb {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
 
@@ -710,12 +725,22 @@ textarea {
 .header__flex {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .header__flex {
     align-items: center;
   }
+}
+@media screen and (min-width: 1200px) {
+  .header__flex {
+    align-items: baseline;
+  }
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .header__thumb {
@@ -783,14 +808,6 @@ textarea {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .contacts__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: baseline;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts__list {
     display: flex;
@@ -803,10 +820,10 @@ textarea {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .list__point {
-    margin-bottom: 10px;
+    padding-top: 10px;
   }
-  .list__point:last-child {
-    margin-bottom: 0px;
+  .list__point:first-child {
+    padding-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1421,9 +1438,17 @@ textarea {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__column {
-    display: block;
     margin-right: 70px;
   }
   .footer__column:last-child {
@@ -1449,9 +1474,10 @@ textarea {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .address__contacts {
     margin-top: 8px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1463,6 +1489,15 @@ textarea {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .join-column--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join-column--right {
     margin-right: 93px;
