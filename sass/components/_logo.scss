@@ -1,13 +1,14 @@
 .logo {
   text-decoration: none;
   display: flex;
-  margin-right: 93px;
+
   font-family: "Raleway";
   @media screen and (min-width: 480px) {
     @include font(700, 24px, 1.16, 0.03em);
   }
   @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.19, null);
+    margin-right: 93px;
   }
 
   color: $accent-color;
