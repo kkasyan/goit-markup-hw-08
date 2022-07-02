@@ -28,7 +28,7 @@
     <header class="header">
       <div class="container">
         <div class="header__flex">
-          <div class="test">
+          <!-- <div class="test"> -->
             <div class="header__thumb">
               <a class="header__logo logo" href="index.html" lang="en">
                 <span class="logo__accent">Web</span>
@@ -50,7 +50,6 @@
                 </ul>
               </nav>
             </div>
-          </div>
           <div class="contacts">
             <ul class="contacts__list list">
               <li class="list__point">
@@ -70,6 +69,7 @@
                 </a>
               </li>
             </ul>
+            </div>
           </div>
           <button
             type="button"
@@ -150,7 +150,6 @@
                   <img
                     src="./images/desktop/compressed-jpeg/wwd1-1x.jpg"
                     alt="Человек набирает код на клавиатуре"
-                    width="370"
                   />
                   <h3 class="wwd-thumb__header">Десктопные приложения</h3>
                 </picture>
@@ -171,7 +170,6 @@
                   <img
                     src="./images/desktop/compressed-jpeg/wwd2-1x.jpg"
                     alt="Человек держит в руках планшет и выбирает на ноутбуке дизайн приложения"
-                    width="370"
                   />
                   <h3 class="wwd-thumb__header">Мобильные приложения</h3>
                 </picture>
@@ -192,7 +190,6 @@
                   <img
                     src="./images/desktop/compressed-jpeg/wwd3-1x.jpg"
                     alt="Человек держит в руках планшет и рассматривает цветовую палитру"
-                    width="370"
                   />
                   <h3 class="wwd-thumb__header">Дизайнерские решения</h3>
                 </picture>
@@ -233,9 +230,10 @@
                     ./images/phone/compressed-jpeg/team1-1x.jpg  1x,
                     ./images/phone/compressed-jpeg/team1-2x.jpg  2x
                   "
-                  media="(min-width: 480px)"
+                  media="(min-width:480px)"
                 />
                 <img
+                  class="team__img"
                   src="./images/phone/compressed-jpeg/team1-1x.jpg"
                   alt="Игорь Демьяненко"
                 />
@@ -305,6 +303,7 @@
                   media="(min-width: 480px)"
                 />
                 <img
+                  class="team__img"
                   src="./images/phone/compressed-jpeg/team2-1x.jpg"
                   alt="Ольга Репина"
                 />
@@ -374,6 +373,7 @@
                   media="(min-width: 480px)"
                 />
                 <img
+                  class="team__img"
                   src="./images/phone/compressed-jpeg/team3-1x.jpg"
                   alt="Николай Тарасов"
                 />
@@ -443,6 +443,7 @@
                   media="(min-width: 480px)"
                 />
                 <img
+                  class="team__img"
                   src="./images/phone/compressed-jpeg/team4-1x.jpg"
                   alt="Михаил Ермаков"
                 />
@@ -690,6 +691,7 @@
         </form>
       </div>
     </div>
+    <!--Мобильное меню-->
     <div class="mobile-menu is-hidden js-menu-container" id="js-menu-container">
       <div class="container">
         <div class="mobile-menu__top">
@@ -734,7 +736,7 @@
         </div>
       </div>
     </div>
-
+    <script src="./js/mobile-menu-alex.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

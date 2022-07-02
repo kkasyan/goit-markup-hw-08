@@ -63,6 +63,16 @@
               </li>
             </ul>
           </div>
+           <button
+            type="button"
+            class="menu__open-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="js-menu-container"
+          >
+            <svg class="menu__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -119,7 +129,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card1-1x.jpg"
                   alt="Страница сайта Технокряк"
                 />
@@ -169,7 +179,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card2-1x.jpg"
                   alt="Постер с баскетболистами"
                 
@@ -223,7 +233,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card3-1x.jpg"
                   alt="Логотип компании с рыбой"
                
@@ -277,7 +287,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img src="./images/phone/compressed-jpeg/card4-1x.jpg" alt="наушники" />
+                <img class="grid__pic" src="./images/phone/compressed-jpeg/card4-1x.jpg" alt="наушники" />
                 </picture>
                 <div class="grid__overlay">
                   <p class="grid__description">
@@ -327,7 +337,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card5-1x.jpg"
                   alt="две коробки"
                  
@@ -381,7 +391,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card6-1x.jpg"
                   alt="страница сайта"
                   
@@ -434,7 +444,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card7-1x.jpg"
                   alt="страницы журнала"
                   
@@ -488,7 +498,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img src="./images/phone/compressed-jpeg/card8-1x.jpg" alt="лейба"  />
+                <img class="grid__pic" src="./images/phone/compressed-jpeg/card8-1x.jpg" alt="лейба"  />
                 </picture>
                 <div class="grid__overlay">
                   <p class="grid__description">
@@ -538,7 +548,7 @@
                     "
                     media="(min-width: 480px)"
                   />
-                <img
+                <img class="grid__pic"
                   src="./images/phone/compressed-jpeg/card9-1x.jpg"
                   alt="сайт на ноутбуке"
                  
@@ -630,5 +640,51 @@
         </form>
       </div>
     </footer>
+     <div class="mobile-menu is-hidden js-menu-container" id="js-menu-container">
+      <div class="container">
+        <div class="mobile-menu__top">
+          <button type="button" class="mobile-menu__close-button js-close-menu">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item current">
+              <a class="mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__bottom bottom">
+          <ul class="bottom__contacts">
+            <li class="bottom__contact phone">
+              <a class="bottom__link" href="tel:+38 096 111 11 11">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="bottom__contact">
+              <a class="bottom__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="bottom__socials soc">
+            <li class="soc__item">
+              <a class="soc__link" href="">Instagram</a>
+            </li>
+            <li class="soc__item"><a class="soc__link" href="">Twitter</a></li>
+            <li class="soc__item"><a class="soc__link" href="">Facebook</a></li>
+            <li class="soc__item"><a class="soc__link" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        <script src="./js/mobile-menu-alex.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

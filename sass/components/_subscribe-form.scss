@@ -1,5 +1,5 @@
 form {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,18 +8,12 @@ form {
   }
 }
 .join__head {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 20px;
-    margin-top: 60px;
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     align-content: center;
     text-align: center;
   }
-
-  @media screen and (min-width: 1200px) {
-  }
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .join__head strong {
@@ -46,7 +40,10 @@ form {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
@@ -58,9 +55,7 @@ form {
     outline: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  @media screen and (min-width: 480px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .join__btn {

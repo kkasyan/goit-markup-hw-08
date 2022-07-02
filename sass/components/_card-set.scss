@@ -1,26 +1,22 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   @media screen and (min-width: 768px) {
     margin-left: -30px;
   }
 }
-// &:last-child {
-//   justify-content: flex-start;
-// }
 
 .grid__item {
   display: flex;
   flex-direction: column;
   background-color: var(--second-text-color);
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
@@ -53,6 +49,10 @@
   text-decoration: none;
 }
 
+.grid__pic {
+  width: 100%;
+}
+
 .grid__overlay {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
@@ -77,23 +77,26 @@
   max-height: 168px;
   top: 50%;
   left: 50%;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 479px) {
+    padding-top: 10px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-top: 77px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 49px;
   }
-  padding-top: 63px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 63px;
+  }
 }
 
 .grid__card {
-  @media screen and (min-width: 480px) {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-  }
-
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   @media screen and (min-width: 1200px) {
     padding-bottom: 20px;
   }

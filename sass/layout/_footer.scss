@@ -6,7 +6,7 @@
 }
 
 .footer__flex {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@
 }
 
 .footer__column {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +52,7 @@
 .address__contacts {
   @include font(null, 14px, 1.71, null);
   @include transition();
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 8px;
     text-align: center;
   }
@@ -70,7 +70,7 @@
 }
 
 .join-column--right {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;

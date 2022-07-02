@@ -55,48 +55,48 @@
   //   }
   // }
 
-  @include mobile {
+  @media screen and (max-width: 767px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/phone/compressed-jpeg/Header-img-1x.jpg);
+      url(../images/phone/compressed-jpeg/Header-img-1x.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/phone/compressed-jpeg/Header-img-2x.jpg);
+        url(../images/phone/compressed-jpeg/Header-img-2x.jpg);
     }
   }
 
-  @include tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/tablet/compressed-jpeg/Header-img-1x.jpg);
+      url(../images/tablet/compressed-jpeg/Header-img-1x.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/tablet/compressed-jpeg/Header-img-2x.jpg);
+        url(../images/tablet/compressed-jpeg/Header-img-2x.jpg);
     }
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/desktop/compressed-jpeg/header-1x.jpg);
+      url(../images/desktop/compressed-jpeg/header-1x.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/desktop/compressed-jpeg/header-2x.jpg);
+        url(../images/desktop/compressed-jpeg/header-2x.jpg);
     }
   }
 
@@ -196,14 +196,20 @@
   // }
 
   .hero__container {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 479px) {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       padding-top: 118px;
       padding-bottom: 118px;
       padding-right: 60px;
       padding-left: 60px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-top: 118px;
       padding-bottom: 118px;
       padding-right: 204px;
@@ -224,11 +230,11 @@
     text-align: center;
     text-transform: uppercase;
     color: $second-text-color;
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
       @include font(null, 26px, 1.61, null);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       @include font(null, 26px, 1.61, null);
     }
 
@@ -242,7 +248,13 @@
   }
 
   .hero__btn {
-    padding-right: 32px;
-    padding-left: 32px;
+    @media screen and (max-width: 479px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+    @media screen and (min-width: 480px) {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
   }
 }

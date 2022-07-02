@@ -1,5 +1,5 @@
 .team {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -9,4 +9,8 @@
   }
   background-color: $btn-background-color;
   letter-spacing: 0.03em;
+}
+
+.team__img {
+  width: 100%;
 }
