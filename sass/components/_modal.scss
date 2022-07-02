@@ -11,8 +11,14 @@
 
 .modal {
   position: absolute;
-  min-height: 581px;
-  max-width: 528px;
+  @media screen and (min-width: 480px) {
+    min-height: 609px;
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    max-width: 528px;
+  }
   background-color: $second-text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -34,6 +40,7 @@
 }
 
 .form__close {
+  cursor: pointer;
   margin-top: 8px;
   margin-right: 8px;
   position: absolute;
@@ -62,6 +69,9 @@
   text-align: center;
   color: $main-text-color;
   margin-bottom: 12px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include font(null, null, 1.5, null);
+  }
   @include font(700, 20px, 1.15, 0.03em);
 }
 
@@ -112,8 +122,11 @@ textarea {
   padding-left: 16px;
   margin-top: 4px;
   font-family: "Roboto";
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include font(null, null, 1.14, null);
+  }
   color: rgba(117, 117, 117, 0.5);
-  @include font(null, 12px, 1.14, 0.01em);
+  @include font(null, 12px, 1.16, 0.01em);
   @include transition($tp: border);
 }
 
@@ -186,6 +199,9 @@ textarea {
   letter-spacing: 0.03em;
   color: $paragraph-text-color;
   margin-left: 8.38px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include font(null, 12px, 1.16, null);
+  }
 }
 
 .agreement__link {
