@@ -6,10 +6,10 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  @media screen and (max-width: 479px) {
-    // padding-top: 93px;
-    // padding-right: 15px;
-    // padding-left: 15px;
+  @media screen and (max-width: 767px) {
+    padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   @include transition($tp: opacity visibility, $td: 3000ms);
 }
@@ -17,8 +17,9 @@
 .modal {
   position: absolute;
 
-  @media screen and (max-width: 479px) {
-    width: calc(100% - 30px);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    position: relative;
   }
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     min-height: 609px;

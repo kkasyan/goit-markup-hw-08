@@ -279,6 +279,14 @@ img {
   transition-duration: 3000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .modal {
   position: absolute;
   background-color: #ffffff;
@@ -296,9 +304,10 @@ img {
   padding-bottom: 40px;
   padding-left: 40px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .modal {
-    width: calc(100% - 30px);
+    width: 100%;
+    position: relative;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
