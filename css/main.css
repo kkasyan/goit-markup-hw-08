@@ -297,11 +297,15 @@ img {
   padding-bottom: 40px;
   padding-left: 40px;
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    height: 100vh;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     min-height: 609px;
     min-width: 450px;
-    width: 100vw;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -11,8 +11,8 @@
 
 .modal {
   position: absolute;
-  @media screen (max-width: 480px) {
-    width: 100vw;
+  @media screen and (max-width: 479px) {
+    height: 100vh;
   }
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     min-height: 609px;
