@@ -8,6 +8,8 @@
   opacity: 1;
   @media screen and (max-width: 479px) {
     padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   @include transition($tp: opacity visibility, $td: 3000ms);
 }
@@ -15,6 +17,7 @@
 .modal {
   position: absolute;
   @media screen and (max-width: 479px) {
+    width: calc(100% - 30px);
   }
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     min-height: 609px;

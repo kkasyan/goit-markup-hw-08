@@ -282,6 +282,8 @@ img {
 @media screen and (max-width: 479px) {
   .backdrop {
     padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -301,6 +303,11 @@ img {
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
