@@ -60,7 +60,9 @@
   height: 100%;
   padding-right: 24px;
   padding-left: 24px;
-
+  @media screen and (max-width: 479px) {
+    padding-right: 2px;
+  }
   top: 0;
   left: 0;
   transform: translateY(100%);
@@ -74,12 +76,25 @@
 .grid__description {
   @include font(null, 18px, 1.56, 0.03em);
   color: $second-text-color;
-  max-height: 168px;
   top: 50%;
   left: 50%;
   @media screen and (max-width: 479px) {
-    padding-top: 10px;
+    height: 100%;
+    padding-top: 15px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 7px;
+      margin-left: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $items-backgroud-color;
+      outline: transparent;
+      border-radius: 4px;
+    }
   }
+
   @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-top: 77px;
   }
