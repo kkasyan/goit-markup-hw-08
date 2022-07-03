@@ -6,6 +6,9 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  @media screen and (max-width: 479px) {
+    padding-top: 93px;
+  }
   @include transition($tp: opacity visibility, $td: 3000ms);
 }
 
