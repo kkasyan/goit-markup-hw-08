@@ -1069,6 +1069,10 @@ textarea {
   transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .mobile-menu__list {
   padding-top: 48px;
   padding-left: 40px;
