@@ -4,6 +4,7 @@
   color: $main-text-color;
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
+    @include font(null, 28px, null, 0.03em);
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;

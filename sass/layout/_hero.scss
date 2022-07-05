@@ -97,6 +97,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $second-text-color;
+    font-weight: 900;
     @media screen and (max-width: 767px) {
       @include font(null, 26px, 1.61, null);
     }
@@ -106,7 +107,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      @include font(900, 44px, 1.36, 0.06em);
+      @include font(null, 44px, 1.36, 0.06em);
     }
   }
 

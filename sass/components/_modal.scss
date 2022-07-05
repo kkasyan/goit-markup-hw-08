@@ -12,7 +12,7 @@
     padding-left: 15px;
     padding-bottom: 15px;
   }
-  @include transition($tp: opacity visibility, $td: 3000ms);
+  transition: opacity 300ms, visibility 300ms;
 }
 
 .modal {
@@ -36,8 +36,8 @@
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  @include transition($tp: transform, $td: 3000ms);
-  transform: scale(1) translate(-50%, -50%) rotate(1turn);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 900ms;
   opacity: 1;
   padding-top: 40px;
   padding-right: 40px;
@@ -236,6 +236,5 @@ textarea {
 }
 
 .backdrop.is-hidden .modal {
-  transform: scale(1.5) translate(-50%, -50%);
-  @include transition(transform, 3000ms, null);
+  transform: translate(-50%, -50%) scale(0) rotate(180deg);
 }

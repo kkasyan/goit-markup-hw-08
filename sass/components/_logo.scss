@@ -3,9 +3,6 @@
   display: flex;
 
   font-family: "Raleway";
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 26px;
-  }
   @media screen and (max-width: 1199px) {
     @include font(700, 24px, 1.16, 0.03em);
   }
@@ -21,6 +18,12 @@
 .header__logo {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 88px;
+  }
+}
+
+.header__logo--top {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 26px;
   }
 }
 .logo__part--light {
